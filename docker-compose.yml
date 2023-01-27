@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7.41
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: senha-secreta
+      MYSQL_DATABASE: meu_banco
+      MYSQL_USER: meu_usuario
+      MYSQL_PASSWORD: minha_senha
+    volumes:
+      - db-data:/var/lib/mysql
+volumes:
+  db-data:

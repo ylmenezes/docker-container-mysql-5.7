@@ -1,0 +1,10 @@
+# Docker MySQL 5.7.41 
+
+***Alterar os parâmetros de environment do arquivo docker-compose.yml***
+
+```
+MYSQL_ROOT_PASSWORD: senha-secreta
+MYSQL_DATABASE: meu_banco
+MYSQL_USER: meu_usuario
+MYSQL_PASSWORD: minha_senha
+```
